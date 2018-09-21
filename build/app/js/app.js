@@ -65,6 +65,12 @@ $(document).ready(function () {
 		},
 		removeContrastClass = function() {
 			$('.page--index').removeClass('contrast');
+		},
+		showHeaderLogo = function() {
+			$('.header__logo').removeClass('hide')
+		},
+		hideHeaderLogo = function() {
+			$('.header__logo').addClass('hide')
 		}
 
 		$('.index-slider').slick({
@@ -83,7 +89,13 @@ $(document).ready(function () {
 			if (nextSlide != 4) {
 				removeContrastClass()
 			}
+			if (nextSlide != 0) {
+				showHeaderLogo()
+			}
 			switch (nextSlide) {
+				case 0:
+					hideHeaderLogo()
+					break;
 				case 1:
 					showAdvantageArrow()
 					break;
@@ -122,12 +134,19 @@ $(document).ready(function () {
 (function(){
   if($('.page--maraphon').length) {
 		var duration = 400,
-		addContrastClass = function() {
-			$('.page--maraphon').addClass('contrast');
-		},
-		removeContrastClass = function() {
-			$('.page--maraphon').removeClass('contrast');
-    }
+			flag = true,
+			addContrastClass = function() {
+				$('.page--maraphon').addClass('contrast');
+			},
+			removeContrastClass = function() {
+				$('.page--maraphon').removeClass('contrast');
+			},
+			showHeaderLogo = function() {
+				$('.header__logo').removeClass('hide');
+			},
+			hideHeaderLogo = function() {
+				$('.header__logo').addClass('hide')
+			}
 
 		$('.maraphon-slider').slick({
 			arrows: false,
@@ -142,10 +161,16 @@ $(document).ready(function () {
 		});
 
 		$('.maraphon-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+			var target = $( event.target );
+			if (target.is($('.maraphon-banner__list'))) {
+				return false
+			}
 			if (nextSlide == 1) {
-        addContrastClass()
+				addContrastClass()
+				showHeaderLogo()
       } else {
-        removeContrastClass()
+				removeContrastClass()
+				hideHeaderLogo()
 			}
 		});
 

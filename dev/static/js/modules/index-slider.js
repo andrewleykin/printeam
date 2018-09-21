@@ -16,6 +16,12 @@
 		},
 		removeContrastClass = function() {
 			$('.page--index').removeClass('contrast');
+		},
+		showHeaderLogo = function() {
+			$('.header__logo').removeClass('hide')
+		},
+		hideHeaderLogo = function() {
+			$('.header__logo').addClass('hide')
 		}
 
 		$('.index-slider').slick({
@@ -34,7 +40,13 @@
 			if (nextSlide != 4) {
 				removeContrastClass()
 			}
+			if (nextSlide != 0) {
+				showHeaderLogo()
+			}
 			switch (nextSlide) {
+				case 0:
+					hideHeaderLogo()
+					break;
 				case 1:
 					showAdvantageArrow()
 					break;

@@ -1,6 +1,169 @@
 {
-  "content": {
-    " " : " ",
-    " " : " "
+  "general": {
+    "social": {
+      "list": [
+        {
+          "href": "https://vk.com/public170941498",
+          "icon": "vk"
+        },
+        {
+          "href": "#",
+          "icon": "tg"
+        },
+        {
+          "href": "https://www.instagram.com/prin_team/",
+          "icon": "inst"
+        },
+        {
+          "href": "https://wa.me/89251734474",
+          "icon": "wp"
+        }
+      ]
+    },
+    "logo": {
+      "main": "app/img/general/logo.png",
+      "small": "app/img/general/logo-small.png",
+      "alt": "PrinTeam Logo",
+      "maraphon": {
+        "main": "app/img/general/logo-maraphon.png",
+        "small": "app/img/general/logo-maraphon-small.png",
+        "alt": "PrinTeam maraphon Logo"
+      }
+    },
+    "phone": {
+      "icon": "mobile",
+      "href": "tel:+79251734474",
+      "text": "+7 925 173-44-74"
+    },
+    "mail": {
+      "icon": "mail",
+      "href": "mailto:hi@prin-team.ru",
+      "text": "hi@prin-team.ru"
+    },
+    "footer": {
+      "icon": "lightning",
+      "text": "специальное предложение",
+      "href": "maraphon.html"
+    },
+    "linkOrder": {
+      "text": "заказать"
+    },
+    "backLink": {
+      "text": "назад",
+      "href": "/"
+    }
+  },
+  "topBanner": {
+    "text": "закажте нанесение фамили, номера и логотип вашей команды, каждому игроку.",
+    "img": {
+      "src": "app/img/content/top-banner/img.png",
+      "alt": "top-banner img"
+    }
+  },
+  "advantage": {
+    "list": [
+      {
+        "src": "app/img/content/advantage/1.png",
+        "alt": "advantage icon 1",
+        "name": "выгодно",
+        "text": "мы распологаем широким спектром специальных условий, индивидуальных для каждого клиента"
+      },
+      {
+        "src": "app/img/content/advantage/2.png",
+        "alt": "advantage icon 2",
+        "name": "быстро",
+        "text": "в экстренных ситуациях мы можем выполнить заказ, в день обращения"
+      },
+      {
+        "src": "app/img/content/advantage/3.png",
+        "alt": "advantage icon 3",
+        "name": "удобно",
+        "text": "наши специалисты помогут воплотить любые ваши идеи на высшем уровне, свяжитесь с нами прямо сейчас!"
+      }
+    ]
+  },
+  "choice": {
+    "imgs": [
+      {
+        "src": "app/img/content/choice/1.png",
+        "alt": "choice img 1",
+        "number": "1"
+      },
+      {
+        "src": "app/img/content/choice/2.png",
+        "alt": "choice img 2",
+        "number": "2"
+      },
+      {
+        "src": "app/img/content/choice/3.png",
+        "alt": "choice img 3",
+        "number": "3"
+      }
+    ],
+    "text": "широкий выбор цветов и мест размещения   нанесения"
+  },
+  "order": {
+    "form": {
+      "list": [
+        {
+          "type": "text",
+          "name": "name",
+          "id": "name",
+          "label": "ИМЯ",
+          "data": "name"
+        },
+        {
+          "type": "text",
+          "name": "mail",
+          "id": "mail",
+          "label": "E-MAIL",
+          "data": "email"
+        },
+        {
+          "type": "text",
+          "name": "phone",
+          "id": "phone",
+          "label": "ТЕЛЕФОН",
+          "data": "phone"
+        }
+      ],
+      "hidden": "page"
+    },
+    "title": {
+      "main": "для оформления заказа заполните форму обратной связи или просто свяжитесь с менеджером ",
+      "small": "по телефону или почте"
+    },
+    "icon": "check",
+    "text": "нажимая кнопку «отправить» вы даёте своё согласие на обработку персональных данных",
+    "btn": {
+      "text": "отправить",
+      "type": "submit"
+    }
+  },
+  "map": {
+    "icon": "place",
+    "title": "Кутузовский проспект дом 36 строение 7б",
+    "texts": [
+      {
+        "text": "мы работаем по будням с 10 до 18,"
+      },
+      {
+        "text": "но в экстренных ситуациях,"
+      },
+      {
+        "text": "просто позвоните нам и макеты будут столе к утру."
+      }
+    ],
+    "link": {
+      "href": "https://goo.gl/cvJwK6",
+      "text": "показать на карте"
+    }
+  },
+  "maraphonBanner": {
+    "text": "мы предлагаем особые условия, на полный спект услуг печати для проведения массовых мероприятий, марафонов и праздников",
+    "img": {
+      "src": "app/img/content/maraphon/img.png",
+      "alt": "maraphon img"
+    }
   }
 }

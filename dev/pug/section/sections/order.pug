@@ -1,0 +1,27 @@
+section.section.order
+  .container
+    .order__wrap
+      form.order__form.form(action="#" data-validation)
+        input.order__hidden(type="hidden" name=content.order.form.hidden)
+        .order__main
+          .order__block
+            each item in content.order.form.list
+              .order__group
+                input.order__input(type=item["type"] name=item["name"] id=item["id"] data-name=item["data"])
+                label.order__label(for=item["id"])= item["label"]
+          .order__info
+            h2.order__title= content.order.title.main
+              span= content.order.title.small
+            .order__link
+              include ../../modules/phone
+            .order__link
+              include ../../modules/mail
+        .order__action
+          .order__check
+            .order__icon
+              +icon(content.order.icon)
+            .order__subaction
+              span.order__text= content.order.text
+              .order__arrow
+          button.btn.order__btn(type=content.order.btn.type)
+            span= content.order.btn.text

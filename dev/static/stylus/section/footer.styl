@@ -1,0 +1,48 @@
+.footer__link
+  position fixed
+  bottom 20px
+  left 50%
+  transform: translateX(-50%)
+  z-index 10
+  width 80px
+  height 80px
+  flex-center()
+  @extend .trs
+  &:hover
+    opacity 0.8
+
+.footer__icon
+  .icon
+    width 50px
+    height 50px
+    use
+      fill $tree-poppy
+
+.footer__text
+  position absolute
+  top -6px
+  left -6px
+  width 90px
+  height 90px
+  transform-origin center
+  animation rotate 8s linear infinite 
+  span
+    position absolute
+    top 0
+    left 50%
+    height 45px
+    transform-origin bottom center
+    font-weight 700
+
+for num in (1...24)
+  .footer__text span:nth-child({num})
+    transform translateX(-50%) rotate(num*15 deg)
+
+@keyframes rotate {
+  from {
+    transform rotate(0deg)
+  }
+  to {
+    transform rotate(-360deg)
+  }
+}

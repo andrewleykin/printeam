@@ -1,0 +1,82 @@
+.advantage
+  background-image linear-gradient(to bottom, #fec905 0%, #fcbc0b 100%)
+  .container
+    height 100%
+    display flex
+    flex-direction column
+    justify-content center
+
+.advantage__wrap
+  width 100%
+  max-width 800px
+  margin 0 auto
+
+.advantage__list
+  display flex
+  justify-content space-between
+  margin-bottom 50px
+
+.advantage__item
+  max-width 200px
+  display flex
+  flex-direction column
+  align-items center
+  text-align center
+
+.advantage__icon
+  margin-bottom 17px
+
+.advantage__name
+  color #fff
+  font-size 22px
+  line-height 24px
+  text-transform uppercase
+  margin-bottom 25px
+
+.advantage__text
+  line-height 17px
+
+.advantage__action
+  display flex
+  align-items center
+  justify-content flex-end
+
+.advantage__arrow
+  position relative
+  width 100%
+  max-width 350px
+  height 25px
+  &:before,&:after
+    content ''
+    display block
+    position absolute
+  &:before
+    width 0
+    height 1px
+    background-color $tree-poppy
+    left 0
+    top 50%
+    transform translateY(-50%)
+    transition all .7s
+  &:after
+    width 0
+    height 0
+    border 1px solid transparent
+    border-right-color $tree-poppy
+    border-bottom-color $tree-poppy
+    right 0
+    top 50%
+    transform translateY(-50%) rotate(-45deg)
+    transition all .4s
+    transition-delay .8s
+  &.active
+    &:before
+      width 100%
+    &:after
+      width 12px
+      height 12px
+
+
+
+.advantage__link
+  margin-left 25px

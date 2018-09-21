@@ -1,0 +1,14 @@
+section.section.advantage
+  .container
+    .advantage__wrap
+      .advantage__list
+        each item in content.advantage.list
+          .advantage__item
+            .advantage__icon
+              img(src=item["src"] alt=item["alt"])
+            h3.advantage__name= item["name"]
+            p.advantage__text= item["text"]
+      .advantage__action
+        .advantage__arrow
+        .advantage__link
+          include ../../modules/link-order

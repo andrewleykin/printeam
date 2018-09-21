@@ -1,0 +1,11 @@
+section.section.choice
+  .container
+    .choice__wrap
+      .choice__imgs
+        each item in content.choice.imgs
+          .choice__img(class="choice__img--"+item["number"])
+            img(src=item["src"], alt=item["alt"])
+      .choice__info
+        p.choice__text= content.choice.text
+        .choice__link
+          include ../../modules/link-order

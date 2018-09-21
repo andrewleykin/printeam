@@ -1,0 +1,44 @@
+.map
+  background-image linear-gradient(to bottom, #f8a019 0%, #f7971e 100%)
+  .container
+    height 100%
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+
+.map__wrap
+  display flex
+  flex-direction column
+  align-items center
+  text-align center
+  max-width 360px
+
+.map__icon
+  margin-bottom 13px
+  .icon
+    width 64px
+    height 64px
+    &:hover
+      use
+        fill darken(#fff, 3)
+    use
+      fill #fff
+      @extend .trs
+
+.map__title
+  font-size 22px
+  line-height 24px
+  text-transform uppercase
+  margin-bottom 22px
+  max-width 283px
+
+.map__text
+  display flex
+  flex-direction column
+  margin-bottom 84px
+  line-height 17px
+
+.map__link
+  &.btn
+    width 213px

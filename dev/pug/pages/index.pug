@@ -1,6 +1,14 @@
 extends ../layout/main
 
 block variables
-	- var title = 'Главная страница'
+	- var title = 'PrinTeam'
+	- var page = 'index'
 
 block content
+	include ../modules/slider-dots
+	main.index-slider
+		include ../section/sections/top-banner
+		include ../section/sections/advantage
+		include ../section/sections/choice
+		include ../section/sections/order
+		include ../section/sections/map

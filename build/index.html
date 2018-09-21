@@ -2,18 +2,189 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Главная страница</title>
+    <title>PrinTeam</title>
     <meta http-equiv="X-UA-Compatible" content="IE = edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="app/css/foundation.css">
     <link rel="stylesheet" type="text/css" href="app/css/main.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
-    <body>
+    <body class="page--index">
       <div class="wrapper">
+        <header class="header">
+          <div class="container">
+            <div class="header__wrap">
+              <div class="header__social">
+                <div class="social">
+                  <div class="social__list">
+                    <div class="social__item"><a class="social__link" href="https://vk.com/public170941498">
+                        <svg class="icon icon-vk ">
+                          <use xlink:href="app/img/svg/symbol/sprite.svg#vk"></use>
+                        </svg></a></div>
+                    <div class="social__item"><a class="social__link" href="#">
+                        <svg class="icon icon-tg ">
+                          <use xlink:href="app/img/svg/symbol/sprite.svg#tg"></use>
+                        </svg></a></div>
+                    <div class="social__item"><a class="social__link" href="https://www.instagram.com/prin_team/">
+                        <svg class="icon icon-inst ">
+                          <use xlink:href="app/img/svg/symbol/sprite.svg#inst"></use>
+                        </svg></a></div>
+                    <div class="social__item"><a class="social__link" href="https://wa.me/89251734474">
+                        <svg class="icon icon-wp ">
+                          <use xlink:href="app/img/svg/symbol/sprite.svg#wp"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__logo">
+                <div class="logo"><img class="logo__img" src="app/img/general/logo-small.png" alt="PrinTeam Logo"></div>
+              </div>
+              <div class="header__phone">
+                <div class="phone"><a class="contact-link" href="tel:+79251734474">
+                    <div class="contact-link__icon">
+                      <svg class="icon icon-mobile ">
+                        <use xlink:href="app/img/svg/symbol/sprite.svg#mobile"></use>
+                      </svg>
+                    </div><span class="contact-link__text">+7 925 173-44-74</span></a></div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="slider-dots"></div>
+        <main class="index-slider">
+          <section class="section top-banner" id="top-banner">
+            <div class="container">
+              <div class="top-banner__wrap">
+                <div class="top-banner__info">
+                  <div class="top-banner__logo"><img src="app/img/general/logo.png" alt="PrinTeam Logo"></div>
+                  <p class="top-banner__text">закажте нанесение фамили, номера&nbsp;и&nbsp;логотип вашей команды, каждому&nbsp;игроку.</p>
+                  <div class="top-banner__link"><a class="btn link-order" href="#">заказать</a></div>
+                </div>
+                <div class="top-banner__img" id="parallax-img"><img src="app/img/content/top-banner/img.png" alt="top-banner img" data-depth="0.1"></div>
+              </div>
+            </div>
+          </section>
+          <section class="section advantage">
+            <div class="container">
+              <div class="advantage__wrap">
+                <div class="advantage__list">
+                  <div class="advantage__item">
+                    <div class="advantage__icon"><img src="app/img/content/advantage/1.png" alt="advantage icon 1"></div>
+                    <h3 class="advantage__name">выгодно</h3>
+                    <p class="advantage__text">мы распологаем широким спектром специальных условий, индивидуальных для каждого клиента</p>
+                  </div>
+                  <div class="advantage__item">
+                    <div class="advantage__icon"><img src="app/img/content/advantage/2.png" alt="advantage icon 2"></div>
+                    <h3 class="advantage__name">быстро</h3>
+                    <p class="advantage__text">в экстренных ситуациях мы можем выполнить заказ, в день обращения</p>
+                  </div>
+                  <div class="advantage__item">
+                    <div class="advantage__icon"><img src="app/img/content/advantage/3.png" alt="advantage icon 3"></div>
+                    <h3 class="advantage__name">удобно</h3>
+                    <p class="advantage__text">наши специалисты помогут воплотить любые ваши идеи на высшем уровне, свяжитесь с нами прямо сейчас!</p>
+                  </div>
+                </div>
+                <div class="advantage__action">
+                  <div class="advantage__arrow"></div>
+                  <div class="advantage__link"><a class="btn link-order" href="#">заказать</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section choice">
+            <div class="container">
+              <div class="choice__wrap">
+                <div class="choice__imgs">
+                  <div class="choice__img choice__img--1"><img src="app/img/content/choice/1.png" alt="choice img 1"></div>
+                  <div class="choice__img choice__img--2"><img src="app/img/content/choice/2.png" alt="choice img 2"></div>
+                  <div class="choice__img choice__img--3"><img src="app/img/content/choice/3.png" alt="choice img 3"></div>
+                </div>
+                <div class="choice__info">
+                  <p class="choice__text">широкий выбор цветов и мест размещения   нанесения</p>
+                  <div class="choice__link"><a class="btn link-order" href="#">заказать</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section order">
+            <div class="container">
+              <div class="order__wrap">
+                <form class="order__form form" action="#" data-validation>
+                  <input class="order__hidden" type="hidden" name="page">
+                  <div class="order__main">
+                    <div class="order__block">
+                      <div class="order__group">
+                        <input class="order__input" type="text" name="name" id="name" data-name="name">
+                        <label class="order__label" for="name">ИМЯ</label>
+                      </div>
+                      <div class="order__group">
+                        <input class="order__input" type="text" name="mail" id="mail" data-name="email">
+                        <label class="order__label" for="mail">E-MAIL</label>
+                      </div>
+                      <div class="order__group">
+                        <input class="order__input" type="text" name="phone" id="phone" data-name="phone">
+                        <label class="order__label" for="phone">ТЕЛЕФОН</label>
+                      </div>
+                    </div>
+                    <div class="order__info">
+                      <h2 class="order__title">для оформления заказа заполните форму обратной связи или просто свяжитесь с менеджером <span>по телефону или почте</span></h2>
+                      <div class="order__link">
+                        <div class="phone"><a class="contact-link" href="tel:+79251734474">
+                            <div class="contact-link__icon">
+                              <svg class="icon icon-mobile ">
+                                <use xlink:href="app/img/svg/symbol/sprite.svg#mobile"></use>
+                              </svg>
+                            </div><span class="contact-link__text">+7 925 173-44-74</span></a></div>
+                      </div>
+                      <div class="order__link">
+                        <div class="mail"><a class="contact-link" href="mailto:hi@prin-team.ru">
+                            <div class="contact-link__icon">
+                              <svg class="icon icon-mail ">
+                                <use xlink:href="app/img/svg/symbol/sprite.svg#mail"></use>
+                              </svg>
+                            </div><span class="contact-link__text">hi@prin-team.ru</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order__action">
+                    <div class="order__check">
+                      <div class="order__icon">
+                        <svg class="icon icon-check ">
+                          <use xlink:href="app/img/svg/symbol/sprite.svg#check"></use>
+                        </svg>
+                      </div>
+                      <div class="order__subaction"><span class="order__text">нажимая кнопку «отправить» вы даёте своё согласие на обработку персональных данных</span>
+                        <div class="order__arrow"></div>
+                      </div>
+                    </div>
+                    <button class="btn order__btn" type="submit"><span>отправить</span></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+          <section class="section map">
+            <div class="container">
+              <div class="map__wrap"><a class="map__icon" href="https://goo.gl/cvJwK6" target="_blank">
+                  <svg class="icon icon-place ">
+                    <use xlink:href="app/img/svg/symbol/sprite.svg#place"></use>
+                  </svg></a>
+                <h3 class="map__title">Кутузовский проспект дом 36 строение 7б</h3>
+                <p class="map__text"><span>мы работаем по будням с 10 до 18,</span><span>но в экстренных ситуациях,</span><span>просто позвоните нам и макеты будут столе к утру.</span>
+                </p><a class="btn map__link" href="https://goo.gl/cvJwK6" target="_blank">показать на карте</a>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer"><a class="footer__link" href="maraphon.html">
+            <div class="footer__icon">
+              <svg class="icon icon-lightning ">
+                <use xlink:href="app/img/svg/symbol/sprite.svg#lightning"></use>
+              </svg>
+            </div><span class="footer__text">специальное предложение</span></a></footer>
       </div>
       <script src="app/js/libs.min.js"></script>
-      <script src="app/js/main.js"></script>
+      <script src="app/js/app.js"></script>
     </body>
   </head>
 </html>

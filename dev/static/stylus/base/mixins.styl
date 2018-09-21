@@ -4,6 +4,11 @@ absolute-center()
 	left 50%
 	transform translate(-50%,-50%)
 
+flex-center()
+	display flex
+	align-items center
+	justify-content center
+
 absolute-all(num)
 	position absolute
 	top num
@@ -40,3 +45,6 @@ size(a, b = false)
 		height b
 	else
 		height a
+
+.trs
+	transition all .2s

@@ -1,0 +1,6 @@
+.social
+  .social__list
+    each item in content.general.social.list
+      .social__item
+        a.social__link(href=item["href"])
+          +icon(item["icon"])

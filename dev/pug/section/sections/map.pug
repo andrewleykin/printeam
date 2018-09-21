@@ -1,0 +1,10 @@
+section.section.map
+  .container
+    .map__wrap
+      a.map__icon(href=content.map.link.href target="_blank")
+        +icon(content.map.icon)
+      h3.map__title= content.map.title
+      p.map__text
+        each val in content.map.texts
+          span= val["text"]
+      a.btn.map__link(href=content.map.link.href target="_blank")= content.map.link.text

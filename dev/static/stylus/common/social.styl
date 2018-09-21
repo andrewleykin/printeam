@@ -1,0 +1,22 @@
+.social__list
+  display flex
+  align-items center
+
+.social__item
+  &+&
+    margin-left 70px
+
+.social__link
+  .icon
+    width 28px
+    height 28px
+    &:hover
+      use
+        fill rgba($tree-poppy, 0.8)
+    use
+      fill $tree-poppy
+      @extend .trs
+
+  .icon-vk
+    width 34px
+    height 34px

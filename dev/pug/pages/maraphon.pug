@@ -1,0 +1,12 @@
+extends ../layout/main
+
+block variables
+  - var title = 'PrinTeam'
+  - var page = 'maraphon'
+
+block content
+  include ../modules/back-link
+  include ../modules/slider-dots
+  main.maraphon-slider
+    include ../section/sections/maraphon-banner
+    include ../section/sections/order

@@ -54,10 +54,11 @@
         <main class="index-slider">
           <section class="section top-banner" id="top-banner">
             <div class="container">
+              <div class="top-banner__bg"><img src="app/img/content/top-banner/mob-bg.png" alt="top-banner mob bg"></div>
               <div class="top-banner__wrap">
                 <div class="top-banner__info">
                   <div class="top-banner__logo"><img src="app/img/general/logo.png" alt="PrinTeam Logo"></div>
-                  <p class="top-banner__text">закажте нанесение фамили, номера&nbsp;и&nbsp;логотип вашей команды, каждому&nbsp;игроку.</p>
+                  <p class="top-banner__text">закажте нанесение фамили, номера&nbsp;и&nbsp;логотип вашей&nbsp;команды, каждому&nbsp;игроку.</p>
                   <div class="top-banner__link"><a class="btn link-order" href="#">заказать</a></div>
                 </div>
                 <div class="top-banner__img" id="parallax-img"><img src="app/img/content/top-banner/img.png" alt="top-banner img" data-depth="0.1"></div>
@@ -109,7 +110,7 @@
           <section class="section order">
             <div class="container">
               <div class="order__wrap">
-                <form class="order__form form" action="#" data-validation>
+                <form class="order__form form" action="app/mail/sendOrder.php" method="POST" data-validation>
                   <input class="order__hidden" type="hidden" name="page">
                   <div class="order__main">
                     <div class="order__block">
@@ -177,6 +178,7 @@
           </section>
         </main>
         <footer class="footer"><a class="footer__link" href="maraphon.html">
+            <div class="footer__img"><img src="app/img/content/footer/mob-img.png" alt="special offer"></div>
             <div class="footer__icon">
               <svg class="icon icon-lightning ">
                 <use xlink:href="app/img/svg/symbol/sprite.svg#lightning"></use>

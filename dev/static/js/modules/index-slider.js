@@ -1,5 +1,5 @@
 (function(){
-  if($('.page--index').length) {
+  if ($('.page--index').length && $(window).width() > 768) {
 		var duration = 400,
 			showAdvantageArrow = function() {
 			setTimeout(function(){

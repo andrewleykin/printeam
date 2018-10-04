@@ -9,7 +9,15 @@
   flex-center()
   @extend .trs
   &:hover
-    opacity 0.8
+    opacity .8
+  @media (max-width $breakpoint)
+    width 60px
+    height 60px
+
+.footer__img
+  display none
+  @media (max-width $breakpoint)
+    display block
 
 .footer__icon
   .icon
@@ -17,6 +25,8 @@
     height 50px
     use
       fill $tree-poppy
+  @media (max-width $breakpoint)
+    display none
 
 .footer__text
   position absolute
@@ -33,10 +43,16 @@
     height 45px
     transform-origin bottom center
     font-weight 700
+    @media (max-width $breakpoint)
+      height 35px
+  @media (max-width $breakpoint)
+    display none
 
 for num in (1...24)
   .footer__text span:nth-child({num})
     transform translateX(-50%) rotate(num*15 deg)
+    @media (max-width $breakpoint)
+      transform translateX(-50%) rotate(num*15 deg)
 
 @keyframes rotate {
   from {

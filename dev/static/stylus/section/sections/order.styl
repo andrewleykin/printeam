@@ -5,15 +5,23 @@
     display flex
     flex-direction: column
     justify-content center
+  @media (max-width $breakpoint)
+    background-image none
+    margin-bottom 70px
 
 .order__wrap
   width 100%
   max-width 1024px
   margin-left auto
   margin-right 80px
+  @media (max-width $breakpoint-lg)
+    padding 0 20px
+    margin 0 auto
 
 .order__main
   display flex
+  @media (max-width $breakpoint)
+    flex-direction column-reverse
 
 .order__block
   flex none
@@ -24,6 +32,14 @@
   background-color #ffffff
   padding 40px 30px
   height 345px
+  @media (max-width $breakpoint-lg)
+    max-width 420px
+    margin-right 20px
+  @media (max-width $breakpoint)
+    max-width 355px
+    height 300px
+    margin 0 auto
+    padding 30px 20px
 
 .order__group
   position relative
@@ -33,10 +49,10 @@
     margin-top 35px
   &.invalid
     .order__input
-      border-color red
+      border-color $pomegranate
   &.valid
     .order__input
-      border-color green
+      border-color $tree-poppy
 
 .order__input
   display block
@@ -65,6 +81,10 @@
 
 .order__info
   padding-top 30px
+  @media (max-width $breakpoint)
+    padding-top 0
+    text-align center
+    margin-bottom 50px
 
 .order__title
   margin-bottom 48px
@@ -73,10 +93,26 @@
   text-transform uppercase
   span
     display block
+  @media (max-width $breakpoint-lg)
+    font-size 15px
+    line-height 17px
+    margin-bottom 20px
+    span
+      display inline
+  @media (max-width $breakpoint)
+    max-width 250px
+    margin 0 auto 30px
+    span
+      display block
 
 .order__link
   &+&
     margin-top 22px
+  @media (max-width $breakpoint)
+    display flex
+    justify-content center
+    &+&
+      margin-top 30px
 
 .order__action
   margin-top -45px
@@ -85,6 +121,13 @@
   width 100%
   max-width 878px
   margin-left auto
+  @media (max-width $breakpoint-lg)
+    max-width 650px
+  @media (max-width $breakpoint)
+    max-width 355px
+    margin -50px auto 0
+    flex-direction column
+    padding 0 25px
 
 .order__check
   display flex
@@ -100,6 +143,9 @@
 
 .order__subaction
   width 100%
+  @media (max-width $breakpoint)
+    display flex
+    position relative
 
 .order__text
   width 100%
@@ -134,9 +180,25 @@
     right 0
     top 50%
     transform translateY(-50%) rotate(-45deg)
-
+  @media (max-width $breakpoint)
+    max-width 25px
+    height 95px
+    margin-top 0
+    position absolute
+    right 5px
+    &:before
+      width 2px
+      height 100%
+    &:after
+      top 95%
+      right 50%
+      transform translate(-50%, -50%) rotate(45deg)
 
 .order__btn
   margin-left 25px
   flex none
   margin-top 5px
+  @media (max-width $breakpoint)
+    margin-left 0
+    margin-top 60px
+    align-self flex-end

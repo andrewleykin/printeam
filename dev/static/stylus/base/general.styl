@@ -5,10 +5,19 @@
 	max-width 1300px
 	padding 0 20px
 	margin 0 auto
+	@media	(max-width $breakpoint)
+		padding 0 10px
 
 .section
 	height 100vh
 	min-height 770px
+	@media	(max-width $breakpoint)
+		min-height auto
+		height auto
 
 .index-slider
 	background-image linear-gradient(to bottom, #ffd200 0%, #f7971e 100%)
+
+body
+	@media (max-width $breakpoint)
+		overflow-x hidden

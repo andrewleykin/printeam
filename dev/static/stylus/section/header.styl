@@ -4,14 +4,27 @@
   left 0
   right 0
   z-index 10
+  @media (max-width $breakpoint-lg)
+    top 20px
+  @media (max-width $breakpoint)
+    &.fixed
+      .header__phone
+        margin 0 auto
 
 .header__wrap
   display flex
   align-items center
   justify-content space-between
 
+.header__social
+  @media (max-width $breakpoint)
+    display none
+
 .header__logo
   @extend .trs
   &.hide
     opacity 0
     visibility hidden
+  @media (max-width $breakpoint)
+    &.hide
+      display none

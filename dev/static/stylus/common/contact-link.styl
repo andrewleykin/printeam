@@ -9,6 +9,11 @@
   @extend .trs
   &:hover
     background darken(#fff, 3)
+  @media (max-width $breakpoint)
+    width 160px
+    height 26px
+    padding 7px 10px
+    border-radius 15px
 
 .contact-link__icon
   margin-right 15px
@@ -17,7 +22,14 @@
     height 23px
     use
       fill $tree-poppy
+  @media (max-width $breakpoint)
+    .icon
+      width 15px
+      height 15px
 
 .contact-link__text
   font-size 22px
   line-height 40px
+  @media (max-width $breakpoint)
+    font-size 14px
+    line-height 26px

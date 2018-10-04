@@ -6,6 +6,9 @@
     flex-direction column
     justify-content center
     align-items center
+  @media (max-width $breakpoint)
+    background-image none
+    padding-bottom 110px
 
 .map__wrap
   display flex
@@ -25,6 +28,11 @@
     use
       fill #fff
       @extend .trs
+  @media (max-width $breakpoint)
+    margin-bottom 30px
+    .icon
+      width 45px
+      height 45px
 
 .map__title
   font-size 22px
@@ -32,13 +40,24 @@
   text-transform uppercase
   margin-bottom 22px
   max-width 283px
+  @media (max-width $breakpoint)
+    font-size 15px
+    line-height 17px
+    max-width 205px
+    margin-bottom 20px
 
 .map__text
   display flex
   flex-direction column
   margin-bottom 84px
   line-height 17px
+  @media (max-width $breakpoint)
+    font-size 10px
+    line-height 12px
+    margin-bottom 0
 
 .map__link
   &.btn
     width 213px
+  @media (max-width $breakpoint)
+    display none

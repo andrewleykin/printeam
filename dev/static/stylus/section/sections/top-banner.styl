@@ -5,6 +5,10 @@
     display flex
     flex-direction column
     justify-content flex-end
+  @media (max-width $breakpoint)
+    background-image none
+    .container
+      position relative
 
 .top-banner__wrap
   width 100%
@@ -13,6 +17,29 @@
   display flex
   align-items center
   justify-content space-between
+  @media (max-width $breakpoint)
+    padding-top 210px
+    padding-bottom 300px
+    position relative
+
+.top-banner__bg
+  display none
+  position absolute
+  left -10px
+  width calc(100% + 20px)
+  top 110px
+  img
+    max-width 375px
+    margin 0 auto
+    display block
+    width 100%
+    transform scale(1.3)
+  @media (max-width $breakpoint)
+    display block
+  @media (max-width $breakpoint-sm)
+    img
+      transform scale(1.5)
+
 
 .top-banner__info
   display flex
@@ -20,12 +47,37 @@
   align-items center
   text-align center
   max-width 435px
+  @media (max-width $breakpoint-lg)
+    max-width 60%
+    padding-left 20px
+    padding-bottom 20px
+    z-index 2
+  @media (max-width $breakpoint)
+    max-width 100%
+    width 100%
+    padding-left 0
+    padding-bottom 0
 
 .top-banner__logo
   margin-bottom 50px
+  @media (max-width $breakpoint)
+    margin-bottom 40px
+    max-width 240px
 
 .top-banner__text
   margin-bottom 60px
   font-size 22px
   line-height 24px
   text-transform uppercase
+  @media (max-width $breakpoint)
+    font-size 15px
+    line-height 17px
+    margin-bottom 40px
+    max-width 250px
+    color #fff
+
+.top-banner__img
+  @media (max-width $breakpoint-lg)
+    align-self flex-end
+  @media (max-width $breakpoint)
+    display none

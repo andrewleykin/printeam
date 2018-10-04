@@ -34,13 +34,35 @@
 		})
 	}
 
-	if ($('.top-banner').length) {
+	if ($('.top-banner').length && $(window).width() > 768) {
 		var scene = document.getElementById('parallax-img');
 		var section = document.getElementById('top-banner');
 		var parallaxInstance = new Parallax(scene, {
 			relativeInput: true,
 			hoverOnly: true,
 			inputElement: section
+		});
+	}
+
+	if ($(window).width() <= 768) {
+		$('.advantage__arrow').addClass('wow fadeInLeft');
+		$('.choice__img').addClass('active wow fadeInLeft');
+		
+		if ($(window).scrollTop() >= $('.top-banner').height() / 2) {
+			$('.header').removeClass('fixed');
+			$('.header__logo').removeClass('hide');
+		} else {
+			$('.header').addClass('fixed');
+			$('.header__logo').addClass('hide');
+		}
+		$(window).on('scroll', function(){
+			if ($(window).scrollTop() >= $('.top-banner').height() - 100) {
+				$('.header').removeClass('fixed');
+				$('.header__logo').removeClass('hide');
+			} else {
+				$('.header').addClass('fixed');
+				$('.header__logo').addClass('hide');
+			}
 		});
 	}
 })();

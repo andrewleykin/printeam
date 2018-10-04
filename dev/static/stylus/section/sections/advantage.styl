@@ -5,6 +5,8 @@
     display flex
     flex-direction column
     justify-content center
+  @media (max-width $breakpoint)
+    background-image none
 
 .advantage__wrap
   width 100%
@@ -15,6 +17,15 @@
   display flex
   justify-content space-between
   margin-bottom 50px
+  @media (max-width $breakpoint-lg)
+    padding 0 20px
+    margin-bottom 30px
+  @media (max-width $breakpoint)
+    padding 0
+    flex-direction column
+    align-items center
+    justify-content flex-start
+    text-align center
 
 .advantage__item
   max-width 200px
@@ -22,6 +33,9 @@
   flex-direction column
   align-items center
   text-align center
+  @media (max-width $breakpoint)
+    &+&
+      margin-top 65px
 
 .advantage__icon
   margin-bottom 17px
@@ -40,6 +54,9 @@
   display flex
   align-items center
   justify-content flex-end
+  @media (max-width $breakpoint)
+    justify-content center
+    position relative
 
 .advantage__arrow
   position relative
@@ -75,8 +92,18 @@
     &:after
       width 12px
       height 12px
+  @media (max-width $breakpoint)
+    position absolute
+    right calc(50% + 60px)
+    &:before
+      width 100%
+    &:after
+      width 12px
+      height 12px
 
 
 
 .advantage__link
   margin-left 25px
+  @media (max-width $breakpoint)
+    margin-left 0

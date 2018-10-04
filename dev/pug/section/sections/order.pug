@@ -1,7 +1,7 @@
 section.section.order
   .container
     .order__wrap
-      form.order__form.form(action="#" data-validation)
+      form.order__form.form(action=content.order.action method="POST" data-validation)
         input.order__hidden(type="hidden" name=content.order.form.hidden)
         .order__main
           .order__block

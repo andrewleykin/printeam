@@ -5,5 +5,8 @@ block variables
   - var page = 'thanks'
 
 block content
-  main
-    h1 Спасибо
+  main.thanks
+    h1.thanks__title= content.thanks.title
+    a.thanks__action(href="/")
+      span.thanks__text= content.thanks.action.text
+      .thanks__arrow

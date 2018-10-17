@@ -174,5 +174,11 @@
       "src": "app/img/content/maraphon/img.png",
       "alt": "maraphon img"
     }
+  },
+  "thanks": {
+    "title": "Спасибо за заявку, наш менеджер скоро свяжется с вами!",
+    "action": {
+      "text": "на главную"
+    }
   }
 }

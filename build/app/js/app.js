@@ -336,4 +336,13 @@ $(document).ready(function () {
 			}
 		});
 	}
+
+	if ($('.page--thanks').length) {
+		$('.header__logo').removeClass('hide');
+		$('.thanks__arrow').addClass('active');
+
+		setTimeout(function(){
+			window.location.replace("/");
+		},4000);
+	}
 })();

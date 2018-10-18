@@ -71,7 +71,7 @@
 		$('.thanks__arrow').addClass('active');
 
 		setTimeout(function(){
-			window.location.replace("/");
+			window.location.replace("index.html");
 		},4000);
 	}
 })();

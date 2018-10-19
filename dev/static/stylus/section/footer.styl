@@ -11,13 +11,9 @@
   &:hover
     opacity .8
   @media (max-width $breakpoint)
-    width 60px
-    height 60px
-
-.footer__img
-  display none
-  @media (max-width $breakpoint)
-    display block
+    width 70px
+    height 70px
+    left 50px
 
 .footer__icon
   .icon
@@ -25,8 +21,9 @@
     height 50px
     use
       fill $tree-poppy
-  @media (max-width $breakpoint)
-    display none
+    @media (max-width $breakpoint)
+      width 40px
+      height 40px
 
 .footer__text
   position absolute
@@ -44,9 +41,13 @@
     transform-origin bottom center
     font-weight 700
     @media (max-width $breakpoint)
+      font-size 11px
       height 35px
   @media (max-width $breakpoint)
-    display none
+    top 0
+    left 0
+    width 70px
+    height 70px
 
 for num in (1...24)
   .footer__text span:nth-child({num})

@@ -24,6 +24,7 @@
       "main": "app/img/general/logo.png",
       "small": "app/img/general/logo-small.png",
       "alt": "PrinTeam Logo",
+      "svg": "logo",
       "maraphon": {
         "main": "app/img/general/logo-maraphon.png",
         "small": "app/img/general/logo-maraphon-small.png",
